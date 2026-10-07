@@ -10,7 +10,7 @@ El botón «Ver cómo funciona» del header y del hero lleva a una demostración
 4. Distinguir el trabajo del asistente del contacto y las decisiones del vendedor.
 5. Elegir un resultado ficticio y ver el seguimiento o la revisión humana correspondiente.
 
-Los nombres, productos y cifras son inventados para la demostración y se identifican visiblemente como tales. No se incorporaron capturas, datos, nombres, ventas, teléfonos, dominios privados ni resultados reales de Productos Camacho. No se presenta como caso de éxito ni se promete una compra.
+Los nombres, productos y cifras son inventados para la demostración y se identifican visiblemente como tales. No se incorporaron datos, nombres, ventas, teléfonos, dominios privados ni resultados reales de Productos Camacho. Las vistas ilustrativas adaptadas agregadas posteriormente se documentan en `demo-screenshots.md`. No se presenta como caso de éxito ni se promete una compra.
 
 La demostración usa details/summary y select nativos. El contenido y las fichas se pueden leer sin JavaScript. Un script pequeño actualiza mensajes de simulación anunciados con role=status; no hay llamadas a servicios, almacenamiento ni acciones comerciales reales. La sección del proceso oficial conserva las seis fases y permanece accesible desde el cierre de la demostración.
 
