@@ -474,3 +474,14 @@ h1, h2, h3 { overflow-wrap: anywhere; }
 .screen-demo [hidden] { display: none !important; }
 @media (min-width: 768px) { .screen-demo-slide { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .screen-demo { padding: 16px; } .screen-demo-slide img { height: 440px; } .screen-demo-controls .btn { padding: 10px 14px; } }
+
+/* Display only the app area: Safari's address and navigation bars start below y=1075. */
+.screen-capture-frame { width: min(100%, 286px); aspect-ratio: 591 / 1075; overflow: hidden; border-radius: 16px; background: var(--gray); margin-inline: auto; }
+.screen-demo-slide .screen-capture-frame img, .screen-capture-dialog .screen-capture-frame img { width: 100%; height: auto; border-radius: 0; display: block; }
+.screen-enlarge { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 0; border: 0; background: transparent; font: inherit; text-align: left; text-decoration: underline; color: var(--blue); cursor: pointer; }
+.screen-capture-dialog { width: min(90vw, 640px); max-height: 90vh; overflow: auto; margin: auto; padding: 20px; border: 1px solid var(--border); border-radius: 20px; color: var(--text); }
+.screen-capture-dialog::backdrop { background: rgba(0, 0, 0, .65); }
+.screen-capture-dialog form { display: flex; justify-content: flex-end; margin-bottom: 16px; }
+.screen-capture-dialog h3 { margin-bottom: 16px; }
+.screen-capture-dialog .screen-capture-frame { width: 100%; }
+@media (max-width: 480px) { .screen-demo-slide .screen-capture-frame { width: min(100%, 242px); } }

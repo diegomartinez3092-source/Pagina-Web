@@ -11,3 +11,7 @@ Se retiran los dos WebP adaptados anteriores y sus estilos de galería. Los docu
 Validación: navegación por clic y teclado, carga de las cinco imágenes, límites del recorrido y cinco pantallas visibles sin JavaScript. Chromium a 320, 390, 768, 1280 y 1920 px, sin desbordamiento horizontal y sin errores JavaScript. `node --check demo.js` y `git diff --check` pasan. Lighthouse móvil local: rendimiento 100, accesibilidad 100, buenas prácticas 100, SEO 100. No hay build, lint ni typecheck configurados en este repositorio estático.
 
 Revisión: rama `codex/zentris-interactive-screen-demo`; ejecutar `python3 scripts/preview.py` y abrir http://127.0.0.1:4174/#como-funciona. No se hizo merge, push ni despliegue de esta versión.
+
+## Ajuste de la franja del navegador
+
+Las cinco vistas se encuadran mediante CSS para mostrar únicamente los primeros 1075 píxeles de cada captura, dejando fuera la barra inferior de Safari con su dirección. Los archivos originales permanecen sin editar; es un ajuste de presentación, no eliminación de información de los archivos. La ampliación usa un diálogo nativo con el mismo encuadre, botón de cierre y soporte para Escape. Sin JavaScript se conserva el recorrido estático y no se muestran botones de ampliación inactivos. Validado a 320, 390, 768, 1280 y 1920 px: encuadre correcto, apertura/cierre de las cinco vistas y sin desbordamiento horizontal. Rama `codex/zentris-demo-hide-browser-bar`, pendiente de publicación.

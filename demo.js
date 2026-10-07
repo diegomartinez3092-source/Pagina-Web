@@ -45,3 +45,19 @@ for (const demo of document.querySelectorAll('[data-screen-demo]')) {
   });
   show(0);
 }
+
+// Keep the same app-only framing when enlarging a screen.
+const captureDialog = document.querySelector('.screen-capture-dialog');
+if (captureDialog) {
+  for (const button of document.querySelectorAll('[data-screen-enlarge]')) {
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      const source = button.closest('figure').querySelector('img');
+      const image = captureDialog.querySelector('img');
+      image.src = button.dataset.screenEnlarge;
+      image.alt = source.alt;
+      captureDialog.querySelector('h3').textContent = button.textContent;
+      captureDialog.showModal();
+    });
+  }
+}
