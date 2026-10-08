@@ -503,3 +503,7 @@ h1, h2, h3 { overflow-wrap: anywhere; }
 .case-installed h4 { font-size: 1.1rem; margin-bottom: 10px; }
 .case-human { border-left: 5px solid var(--lime); padding: 20px; margin-top: 24px; background: white; border-radius: 12px; }
 @media (min-width: 768px) { .case-results-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.case-result-context { margin-top: 16px; }
+.case-employee-role { font-weight: 600; margin-bottom: 12px; }
+@media (min-width: 768px) { .case-installed .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
