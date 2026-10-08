@@ -44,7 +44,6 @@
             <h1 id="demo-title">Tu cartera tiene oportunidades. Un Empleado Digital ayuda a encontrarlas.</h1>
             <p>Del historial de compras a una cartera priorizada: descubre cómo prepara el trabajo para que el vendedor pueda atenderlo.</p>
           </div>
-          <p class="demo-notice"><strong>Así se organiza el trabajo.</strong> El recorrido muestra capturas autorizadas. El ejercicio de fichas que encontrarás después utiliza clientes y datos ficticios. Las señales y prioridades dependen de las reglas autorizadas por cada negocio; no garantizan una compra.</p>
           <div class="screen-demo" data-screen-demo role="region" aria-roledescription="carrusel" aria-label="Demostración del organizador de cartera">
             <p class="screen-demo-intro">Recorre las pantallas con un clic. Descubre qué prepara el Empleado Digital y qué atiende el equipo.</p>
             <div class="screen-demo-tabs" aria-label="Elegir pantalla" hidden>
@@ -87,56 +86,37 @@
             <h2 id="screen-dialog-title">Vista ampliada</h2>
             <div class="screen-capture-frame"><img alt="" width="591" height="1280"></div>
           </dialog>
-          <p class="micro demo-screen-note">Capturas y datos autorizados para esta demostración. Muestran momentos de una operación; no constituyen una promesa de resultados ni cifras atribuibles exclusivamente a un Empleado Digital.</p>
-          <h2 class="demo-exercise-title">Prueba un ejemplo con clientes ficticios</h2>
-          <div class="demo-shell">
-            <ol class="demo-journey" aria-label="Recorrido del trabajo">
-              <li>Historial de compras</li><li>Reglas del negocio</li><li>Cartera priorizada</li><li>Contacto del vendedor</li><li>Resultado registrado</li>
-            </ol>
-            <div class="demo-layout">
-              <div class="demo-context">
-                <details class="demo-explainer" open>
-                  <summary>1. Recibe el historial de compras</summary>
-                  <p>Consulta registros autorizados para reconocer hábitos de compra: qué suele comprar cada cliente, con qué frecuencia y cuándo compró por última vez.</p>
-                </details>
-                <details class="demo-explainer">
-                  <summary>2. Aplica las reglas del negocio</summary>
-                  <p>En este ejemplo, se compara el tiempo desde la última compra con la frecuencia habitual. El negocio define qué señales considerar, quién puede ver la información y qué casos debe revisar una persona.</p>
-                </details>
-                <div class="callout"><p>El Empleado Digital prepara y organiza. El vendedor conduce la conversación y confirma lo acordado.</p></div>
-              </div>
-              <div class="demo-portfolio">
-                <h2>3. Explora la cartera preparada</h2>
-                <p class="micro">Abre una ficha para conocer el motivo del seguimiento.</p>
-                <h3 class="demo-group">Oportunidades de recompra</h3>
-                <details class="demo-client">
-                  <summary><span><strong>Comercio Horizonte</strong><span class="demo-client-label">Señal: se acerca su intervalo habitual</span></span><span class="demo-open">Ver ficha</span></summary>
-                  <div class="demo-client-body">
-                    <dl class="demo-facts"><div><dt>Frecuencia habitual</dt><dd>Cada 30 días</dd></div><div><dt>Última compra</dt><dd>Hace 28 días</dd></div><div><dt>Producto habitual</dt><dd>Material de empaque</dd></div></dl>
-                    <p><strong>Por qué contactar:</strong> se aproxima el momento en que este cliente suele comprar. El vendedor puede preguntar si necesita resurtir.</p>
-                    <p class="demo-human"><strong>4. Contacto del vendedor:</strong> confirmar la necesidad actual, cantidades y condiciones. El historial aporta contexto; la decisión de compra es del cliente.</p>
-                    <label for="demo-result-a"><strong>5. Simula el resultado del contacto</strong></label>
-                    <select id="demo-result-a" data-demo-result="demo-feedback-a"><option value="">Elige un resultado ficticio</option><option value="interested">Necesita resurtir</option><option value="later">Pide contacto más adelante</option><option value="unreached">No se logró contactar</option></select>
-                    <p id="demo-feedback-a" class="demo-feedback" role="status">Selecciona una opción para ver cómo queda el seguimiento.</p>
-                  </div>
-                </details>
-                <h3 class="demo-group">Clientes que necesitan seguimiento</h3>
-                <details class="demo-client">
-                  <summary><span><strong>Comercio Sendero</strong><span class="demo-client-label">Señal: pasó su intervalo habitual</span></span><span class="demo-open">Ver ficha</span></summary>
-                  <div class="demo-client-body">
-                    <dl class="demo-facts"><div><dt>Frecuencia habitual</dt><dd>Cada 15 días</dd></div><div><dt>Última compra</dt><dd>Hace 40 días</dd></div><div><dt>Producto habitual</dt><dd>Artículos de limpieza</dd></div></dl>
-                    <p><strong>Por qué contactar:</strong> lleva más tiempo del habitual sin comprar. El vendedor puede averiguar si cambió su necesidad o si existe algún pendiente.</p>
-                    <p class="demo-human"><strong>4. Contacto del vendedor:</strong> escuchar al cliente y revisar la situación antes de asumir que necesita otro pedido.</p>
-                    <label for="demo-result-b"><strong>5. Simula el resultado del contacto</strong></label>
-                    <select id="demo-result-b" data-demo-result="demo-feedback-b"><option value="">Elige un resultado ficticio</option><option value="review">Requiere revisión del responsable</option><option value="later">Pide contacto más adelante</option><option value="unreached">No se logró contactar</option></select>
-                    <p id="demo-feedback-b" class="demo-feedback" role="status">Selecciona una opción para ver cómo queda el seguimiento.</p>
-                  </div>
-                </details>
-                <noscript><p>En la operación, el resultado del contacto permite al equipo distinguir lo atendido de lo pendiente y definir el siguiente paso.</p></noscript>
+          <section class="case-results" aria-labelledby="case-results-title">
+            <p class="eyebrow">Resultados de esta operación</p>
+            <h2 id="case-results-title">El seguimiento se refleja en el trabajo comercial</h2>
+            <div class="case-results-grid">
+              <article class="case-result">
+                <p class="case-result-value"><span>Hasta</span> 8%</p>
+                <h3>Incremento del ticket promedio individual</h3>
+              </article>
+              <article class="case-result">
+                <p class="case-result-value">116%</p>
+                <h3>Incremento en productos promocionados del mes</h3>
+              </article>
+            </div>
+          </section>
+          <section class="case-position" aria-labelledby="case-position-title">
+            <div class="section-heading">
+              <p class="eyebrow">Asistente de Recompra / Resurtido</p>
+              <h2 id="case-position-title">Organizar la cartera para que el equipo pueda actuar</h2>
+              <p>Este puesto revisa el historial de compras y aplica las reglas del negocio para identificar señales de recompra y clientes que están dejando de comprar. Prepara una cartera priorizada con contexto para que el vendedor sepa a quién contactar y por qué.</p>
+            </div>
+            <div class="case-installed">
+              <h3>Funciones que participan en la operación mostrada</h3>
+              <div class="card-grid">
+                <article class="card"><h4>Organización de cartera</h4><p>Prepara los clientes para la jornada y presenta su historial y productos habituales como contexto para el seguimiento.</p></article>
+                <article class="card"><h4>Apoyo en pedidos</h4><p>Ayuda a buscar productos y preparar el pedido que el vendedor confirma con el cliente.</p></article>
+                <article class="card"><h4>Revisión de actividad</h4><p>Permite consultar lo atendido, los pedidos registrados y los pendientes para orientar la supervisión del equipo.</p></article>
               </div>
             </div>
-          </div>
-          <div class="demo-close"><h2>Una responsabilidad concreta, integrada al trabajo de tu equipo.</h2><p>El asistente ayuda a identificar señales y preparar la cartera. Las personas atienden al cliente, resuelven excepciones y supervisan el trabajo.</p><a class="btn btn-primary" href="https://wa.me/525645741746">Hablar sobre mi operación</a><a class="btn btn-outline" href="/#flujo">Conocer nuestro proceso de trabajo</a></div>
+            <div class="case-human"><p>Los Empleados Digitales preparan, registran y dan seguimiento dentro de sus responsabilidades. Las personas atienden al cliente, confirman lo acordado y resuelven las excepciones.</p></div>
+          </section>
+          <div class="demo-close"><h2>Hablemos del trabajo que necesita más capacidad en tu negocio</h2><p>Cuéntanos qué proceso necesita continuidad y revisemos qué puesto podría asumirlo.</p><a class="btn btn-primary" href="https://wa.me/525645741746">Hablar sobre mi operación</a><a class="btn btn-outline" href="/#flujo">Conocer nuestro proceso de trabajo</a></div>
         </div>
       </section>
     </main>
