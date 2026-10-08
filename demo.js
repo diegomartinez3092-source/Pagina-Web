@@ -56,7 +56,7 @@ if (captureDialog) {
       const image = captureDialog.querySelector('img');
       image.src = button.dataset.screenEnlarge;
       image.alt = source.alt;
-      captureDialog.querySelector('h3').textContent = button.textContent;
+      captureDialog.querySelector('#screen-dialog-title').textContent = button.textContent;
       captureDialog.showModal();
     });
   }

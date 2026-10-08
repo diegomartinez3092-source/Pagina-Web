@@ -6,6 +6,16 @@ import os
 ROOT = Path(__file__).resolve().parent.parent
 
 class Preview(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path.split('?')[0] in ['/caso-real', '/caso-real/']:
+            self.path = '/caso-real.html'
+        return super().do_GET()
+
+    def do_HEAD(self):
+        if self.path.split('?')[0] in ['/caso-real', '/caso-real/']:
+            self.path = '/caso-real.html'
+        return super().do_HEAD()
+
     def send_error(self, code, message=None, explain=None):
         if code != 404 or self.path.split('?')[0].startswith('/api/') or self.path.split('?')[0] == '/api':
             return super().send_error(code, message, explain)
